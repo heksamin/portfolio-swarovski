@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700;900&display=swap');
+/*
+@font-face{font-family: 'Noto Sans KR'; font-style: normal; font-weight: 300;
+    src: local('Noto Sans KR'), url("./font/NotoSansKR-Light.eot"), url("../font/NotoSansKR-Light.eot?#iefix") format('embedded-opentype');
+    src: url("../font/NotoSansKR-Light.woff") format('woff'), url("../font/NotoSansKR-Light.ttf") format('truetype');}
+
+@font-face{font-family: 'Noto Sans KR'; font-style: normal; font-weight: 500;
+    src: local('Noto Sans KR'), url("./font/NotoSansKR-Medium.eot"), url("../font/NotoSansKR-Light.eot?#iefix") format('embedded-opentype');
+    src: url("../font/NotoSansKR-Medium.woff") format('woff'), url("../font/NotoSansKR-Medium.ttf") format('truetype');}
+
+@font-face{font-family: 'Noto Sans KR'; font-style: normal; font-weight: 700;
+    src: local('Noto Sans KR'), url("./font/NotoSansKR-Bold.eot"), url("../font/NotoSansKR-Light.eot?#iefix") format('embedded-opentype');
+    src: url("../font/NotoSansKR-Bold.woff") format('woff'), url("../font/NotoSansKR-Bold.ttf") format('truetype');}
+
+@font-face{font-family: 'Noto Sans KR'; font-style: normal; font-weight: 900;
+    src: local('Noto Sans KR'), url("./font/NotoSansKR-Black.eot"), url("../font/NotoSansKR-Light.eot?#iefix") format('embedded-opentype');
+    src: url("../font/NotoSansKR-Black.woff") format('woff'), url("../font/NotoSansKR-Black.ttf") format('truetype');} 
+    */
+/* css document */
+
+body, header, nav, p, div, h1, h2, a, span, ul, li, img, fieldset, footer, address{margin: 0; padding: 0; border: none;}
+ul, li{list-style: none;}
+img, video{vertical-align: top;}
+a{text-decoration: none; color: #292929;}
+a:focus, a:hover{text-decoration: underline;color: #919191;}
+body{font-family: 'Noto Sans KR', "Dotum", "돋움", "Helvetica", "AppleGothic", "Apple SD Gothic Neo", sans-serif; font-size: 11px; color: #292929;}
+.blind {overflow: hidden!important;position: absolute!important;clip: rect(0 0 0 0)!important;width: 1px!important;height: 1px!important;margin: -1px!important;}
+.clearfix::after {content: "";display: block;clear: both;}
+#container {width: 1440px; margin: 0 auto;}
