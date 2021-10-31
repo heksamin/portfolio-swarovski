@@ -10,7 +10,8 @@
 
 <body>
     <p class="sikpNavi blind"><a href="#container">본문내용으로 가기</a></p>
-    <header id="header">
+    <div id="wrap">
+        <header id="header">
         <div class="gnb_area">
             <h1 class="logo"><a href="index.html"><img src="image/logo_b.png" alt="SWAROVSKI"></a></h1>
             <nav class="gnb">
@@ -77,19 +78,18 @@
                     <li><a href="#">MYPAGE</a></li>
                 </ul>
             </nav>
-            <button type="submit"><img src="image/search.png" title="검색버튼" alt="검색"></button>
             <div id="search">
-                <div class="search_wrap">
-                    <span class="search_close">X</span>
-                <form>
-                    <fieldset>
-                        <legend class="blind">메인 화면 검색</legend>
-                        <label for="searchbox" class="blind">검색 입력란</label>
-                        <input type="search" id="searchbox" placeholder="검색">
-                    </fieldset>
-                </form>
+                <div class="main_search">
+                    <form>
+                        <fieldset>
+                            <legend class="blind">메인 화면 검색</legend>
+                            <label for="searchbox" class="blind">메인 검색 입력란</label>
+                            <input type="search" id="searchbox" placeholder="검색">
+                        </fieldset>
+                    </form>
                 </div>
             </div>
+            <button type="submit" class="mainsearch_icon"><img src="image/search.png" title="검색버튼" alt="검색"></button>
             <div class="open"></div>
             <nav class="mo_gnb">
                 <div class="close"></div>
@@ -142,96 +142,200 @@
                 </div>
             </nav>
         </div>
-    </header>
-        <div class="a_g">
-            <p><img src="image/sub_image/group_main.jpg" alt="ABOUT GROUP"></p>
-            <ul >
-                <li><a hrf="#">설명0 <span class="blind">
-                    World of Swarovski<br>
-                    INNOVATION AND INSPIRATION<br>
-                    스와로브스키사는 보석류 및 액세서리, 미용 제품, 조명과 같은 완제품과 돌멩이를 디자인, 제조 및 시판하고 있습니다.<br>
-                    우리의 다양한 제품 포트폴리오는 망원경과 쌍안경, 그라인딩, 시추, 톱질 도구, 산업 조명과 같은 정밀 광학 기기들도 포함하고 있습니다.<br>
-                    그 밖의 활동으로는 Swarovski Entertainment, Swarovski의 뛰어난 재능과 업계 파트너와 협력하여 독창적이고 예술적으로 성공한 특집 영화인 Swarovski Kristallwelen, 오스트리아 와텐스에서 눈부신 인터랙티브 크리스탈 경험을 개발, 자금 조달 및 제작, 그리고 예술적인 스와로브스키 사업의 다양한 측면을 조명하는 기업 및 출판물 및 애플리케이션이 있습니다.</span></a></li>
-                <li><a href="#">설명1 <span class="blind">JEWELRY, WATCHES & ACCESSORIES</span></a></li>
-                <li><a href="#">설명2 <span class="blind">ENTERTAINMENT</span></a></li>
-                <li><a href="#">설명3 <span class="blind">LIGHTING & ARCHITECTURE</span></a></li>
-                <li><a href="#">설명4 <span class="blind">BEAUTY & FRAGRANCE</span></a></li>
-                <li><a href="#">설명5 <span class="blind">CRYSTALS & GEMSTONES</span></a></li>
-                <li><a href="#">설명6 <span class="blind">TECHNICAL GLASS</span></a></li>
-                <li><a href="#">설명7 <span class="blind">OPTIK</span></a></li>
-            </ul>
-        </div>
-        <footer>
-            <div class="footmenu">
-                <ul class="footmenu_wrap">
-                    <li><span class="menu_name">브랜드</span>
-                        <ul class="sub_menu">
-                            <li><a href="#">회사소개</a></li>
-                            <li><a href="#">채용정보</a></li>
-                            <li><a href="#">법인구매</a></li>
-                            <li><a href="#">사이트맵</a></li>
-                        </ul>
+        </header>
+        <div id="container">
+            <div class="a_g">
+                <p><img src="image/sub_image/group_main.jpg" alt="ABOUT GROUP"></p>
+                <ul >
+                    <li>
+                        <a href="#">
+                            <span class="blind">
+                                World of Swarovski<br>
+                                INNOVATION AND INSPIRATION<br>
+                                스와로브스키사는 보석류 및 액세서리, 미용 제품, 조명과 같은 완제품과 돌멩이를 디자인, 제조 및 시판하고 있습니다.<br>
+                                우리의 다양한 제품 포트폴리오는 망원경과 쌍안경, 그라인딩, 시추, 톱질 도구, 산업 조명과 같은 정밀 광학 기기들도 포함하고 있습니다.<br>
+                                그 밖의 활동으로는 Swarovski Entertainment, Swarovski의 뛰어난 재능과 업계 파트너와 협력하여 독창적이고 예술적으로 성공한 특집 영화인 Swarovski Kristallwelen, 오스트리아 와텐스에서 눈부신 인터랙티브 크리스탈 경험을 개발, 자금 조달 및 제작, 그리고 예술적인 스와로브스키 사업의 다양한 측면을 조명하는 기업 및 출판물 및 애플리케이션이 있습니다.
+                            </span>
+                        </a>
                     </li>
-                    <li><span class="menu_name">법적고지</span>
-                        <ul class="sub_menu">
-                            <li><a href="#">저작권</a></li>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">개인정보 보호</a></li>
-                            <li><a href="#">회사정보</a></li>
-                        </ul>
+                    <li>
+                        <a href="#">
+                            <span class="blind">JEWELRY, WATCHES & ACCESSORIES<br>
+                                SWAROVSKI<br>
+                                스와로브스키가 당신의 독특한 스파클을 드러내고
+                                보석, 시계 및 패션 액세서리의 최신 컬렉션을 통해 알 수 있습니다.
+                                스와로브스키 인형과 정밀 절단 크리스탈 조각은
+                                눈에 띄는 현대 디자인으로 집안을 장식합니다.<br>
+                                ATELIER SWAROVSKI<br>
+                                아뜰리에 스와로브스키의 고급 크리스탈 액세서리 컬렉션은
+                                패션, 보석 및 건축을 포함한 다양한 창조적인 분야의 가장
+                                뛰어난 디자이너들과 협력하여 만들어졌습니다.<br>
+                                EYEWEAR<br>
+                                Swarovski Eyewear 컬렉션은 다양한 선글라스와 광학 스타일을 제공합니다.
+                                상상력과 섬세함이 어우러져 반짝이는 개성과 현대 여성성을 강조합니다.
+                            </span>
+                        </a>
                     </li>
-                    <li><span class="menu_name">고객센터</span>
-                        <ul class="sub_menu">
-                            <li><a href="#">문의</a></li>
-                            <li><a href="#">온라인 스토어FAQ</a></li>
-                            <li><a href="#">배송 및 반품</a></li>
-                            <li><a href="#">제품관리 및 수선</a></li>
-                            <li><a href="#">온라인 수선</a></li>
-                        </ul>
+                    <li>
+                        <a href="#">
+                            <span class="blind">
+                                ENTERTAINMENT<br>
+                                Swarovski는
+                                독창성과 새로운 인재를 지원하기 위한 지속적인 노력의 일환으로
+                                두바이 디자인 지구 (d3)에서 Swarovski Creative Center를 시작합니다.<br>                        
+                                스와로브스키 크리에이티브 센터는 디자이너 커뮤니티가
+                                창의력의 한계를 뛰어 넘을수 있도록 혁신, 실험 및 협업을 위한
+                                고무적인 플랫폼을 제공하는 새로운 디자인 커뮤니티 대상입니다.
+                                </span>
+                        </a>
                     </li>
-                    <li><span class="menu_name">멤버십</span>
-                        <ul class="sub_menu">
-                            <li><a href="#">Swarovski Club</a></li>
-                            <li><a href="#">Swarovski Crystal Society</a></li>
-                        </ul>
+                    <li>
+                        <a href="#">
+                            <span class="blind">
+                                LIGHTING & ARCHITECTURE<br>
+                                SWAROVSKI LIGHTING<br>
+                                스와로브스키 조명은 최첨단 건축, 조명 및 인테리어에 영감을 불어 넣습니다.
+                                2011년에 공식적으로 설립된 Swarovski Lighting에는
+                                현대적인 미적 감각을 지닌 스와로브스키 (Swarovski)와
+                                고전적인 디자인을 갖춘 Sch 베크 (Schonbek)라는
+                                두 가지 매우 독특한 프리미엄 소비자 조명 브랜드가 포함되어 있습니다.<br>
+                                ARCHITECTURE & SPECIAL PROJECTS<br>
+                                조명 및 실내 전문가들은
+                                이전에는 불가능했던 것처럼 보이던 것을 혁신하고 인생을
+                                아름답게 만드는 제품을 만들어 내면서 계속해서 경계를 넓혀 왔습니다.<br>
+                                SWAROVSKI CRYSTAL PALACE<br>
+                                샹들리에의 풍부한 전통을 축하하고 재해석하는 동안,
+                                Swarovski Crystal Palace는 장벽을 허물고규칙을
+                                따르고 조명, 미술 및 디자인의 역사에서 새로운 장을 열었습니다.
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="blind">
+                                BEAUTY & FRAGRANCE<br>
+                                스와로브스키의 특별한 아우라는
+                                유명한 인테리어와 제품 디자이너인 Nicolas에 의해 디자인 되었습니다.
+                                크고, 매끈하며, 진정한 임베디드 스와로브스키 크리스탈을 특징으로 합니다.
+                                이것은 드레싱 테이블을 위한 미니어처 작품입니다.
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="blind">
+                                CRYSTALS & GEMSTONES<br>
+                                Swarovski Crystals<br>
+                                100년이상 동안 스와로브스키는
+                                패션, 쥬얼리, 액세서리, 인테리어 디자인 및 조명 분야의
+                                창조적인 재능을 최고의 크리스털로 제공하여 패션 컬렉션에서
+                                아방가르드한 유리 제품에 이르기까지 모든 것을 제공합니다.
+                                전문 인력은 전문가 수준의 트렌드, 디자인, 응용 프로그램 및 마케팅 지원을
+                                글로벌 및 로컬 수준에서 제공하며 기업은 우리와 협력하여
+                                완성된 보석 솔루션 및 기업 선물을 개발합니다.<br>
+                                자연 및 합성 재료의 광채를 포착하고 새로운 차원의 광택을 추가하는 Swarovski Gemstones 및 Created Stones는 스와로브스키의 정밀 진단 및 혁신의 또 다른 예입니다.
+                                이 돌들은 보석, 시계, 안경 및 소비자 전자 제품 산업의 유명 브랜드 디자이너 및 제조업체가 사용했습니다.
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="blind">
+                            TECHNICAL GLASS<br>
+                            SWAREFLEX는 도로 안전 및 조명 가이던스용으로 고품질의 혁신적이고 지능적인 제품을 개발 및 생산합니다.
+                            우리의 동기는 사람과 야생 동물을 보호하고 환경 자원을 절약하는 것
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="blind">
+                            OPTIK<br>
+                            SWAROVSKI OPTIK는 시잔의 프리미엄 부문에서 가장 정밀한 장거리 광학 기기의 개발 및 제조를 전문으로 합니다.
+                            쌍안경, 스포팅 스코프, 라이플 스코프, 옵트 로닉 계기판은 까다로운 사용자에게 적합한 제풉입니다.
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="footarea_wrap">
-                <p class="foot_logo"><img src="image/logo_w.png" alt=""><span class="blind">swarovski</span></p>
-                <p class="foot_info">스와로브스키 코리아<br>
-                                    서울특별시 강남구 도산대로 000 &nbsp; CEO: 홍길동<br>
-                                    사업자등록번호 000-00-00000 &nbsp; 통신판매업신고번호 0000-서울강남-00000<br>
-                                    고객센터 1000-0000 대표번호 1234-5678 &nbsp; 팩스: 00-123-4567 &nbsp; E-mail: help@samin.com<br>
-                </p>
-                    <address>이 사이트는 포트폴리오 용으로 만들어진 가상 사이트입니다. 사이트에 사용된 사진과 내용의 저작권은 스와로브스키에 있습니다.<br>
-                            Copyrightc&copy; 2021 강다혜, All Rights Reserved.
-                    </address>
-                <div class="sns_icon">
-                    <h2 class="sns_icon_title">Follow Us</h2>
-                    <a href="https://www.facebook.com/swarovski.korea" class="sns_fb" title="공식 페이스북 계정으로 가기">페이스북</a>
-                    <a href="https://twitter.com/swarovski" class="sns_tw" title="공식 트위터 계정으로 가기">트위터</a>
-                    <a href="https://www.youtube.com/user/swarovski" class="sns_yt" title="공식 유튜브 채널로 가기">유튜브</a>
-                    <a href="https://www.instagram.com/swarovski/" class="sns_ig" title="공식 인스타그램 계정으로 가기">인스타그램</a>
+        </div>
+    </div>
+    <footer id="footer">
+            <div class="footer_wrap">
+                <div class="footmenu">
+                    <ul class="footmenu_wrap">
+                        <li><span class="menu_name">브랜드</span>
+                            <ul class="sub_menu">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">법인구매</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu_name">법적고지</span>
+                            <ul class="sub_menu">
+                                <li><a href="#">저작권</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">개인정보 보호</a></li>
+                                <li><a href="#">회사정보</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu_name">고객센터</span>
+                            <ul class="sub_menu">
+                                <li><a href="#">문의</a></li>
+                                <li><a href="#">온라인 스토어FAQ</a></li>
+                                <li><a href="#">배송 및 반품</a></li>
+                                <li><a href="#">제품관리 및 수선</a></li>
+                                <li><a href="#">온라인 수선</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu_name">멤버십</span>
+                            <ul class="sub_menu">
+                                <li><a href="#">Swarovski Club</a></li>
+                                <li><a href="#">Swarovski Crystal Society</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <div class="sns_icon">
+                            <h2 class="sns_icon_title">Follow Us</h2>
+                            <a href="https://www.facebook.com/swarovski.korea" class="sns_fb" title="공식 페이스북 계정 새창으로 보기">페이스북</a>
+                            <a href="https://twitter.com/swarovski" class="sns_tw" title="공식 트위터 계정 새창으로 보기">트위터</a>
+                            <a href="https://www.youtube.com/user/swarovski" class="sns_yt" title="공식 유튜브 채널 새창으로 보기">유튜브</a>
+                            <a href="https://www.instagram.com/swarovski/" class="sns_ig" title="공식 인스타그램 계정 새창으로 보기">인스타그램</a>
+                        </div>
+                        <div class="newsletter">
+                            <div class="newsletter_wrap">
+                                <h2 class="newletter_title">NEWS LETTER</h2>
+                                <form>
+                                    <fieldset>
+                                        <legend>구독 이메일 입력</legend>
+                                        <label for="newletter">NEWS LETTER</label>
+                                        <input type="email" id="newletter" placeholder="이메일 입력">
+                                        <button type="submit">구독</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="newsletter">
-                    <div class="newsletter_wrap">
-                        <h2 class="newletter_title">NEWS LETTER</h2>
-                        <form>
-                            <fieldset>
-                                <legend>구독 이메일 입력</legend>
-                                <label for="newletter">NEWS LETTER</label>
-                                <input type="email" id="newletter" placeholder="이메일 입력">
-                                <button type="submit">구독</button>
-                            </fieldset>
-                        </form>
+                <div class="footarticle">
+                    <div class="footarticle_wrap">
+                        <a href="#" class="foot_logo"><img src="image/logo_w.png" alt=""><span class="blind">swarovski</span></a>
+                        <p class="foot_info">Swarovski korea | 서울특별시 강남구 도산대로 000 | CEO: 홍길동<br>
+                                            사업자등록번호 000-00-00000 <a href="https://www.ftc.go.kr/www/bizCommList.do?key=232" title="사업자 정보 확인 새창으로 보기">사업자 정보 확인</a> | 통신판매업신고번호 0000-서울강남-00000<br>
+                                            고객센터 1000-0000 대표번호 1234-5678 | 팩스: 00-123-4567 | E-mail: help@samin.com
+                        </p>
+                            <address>이 사이트는 포트폴리오 용으로 만들어진 가상 사이트입니다. 사이트에 사용된 사진과 내용의 저작권은 스와로브스키에 있습니다.<br>
+                                    Copyrightc&copy; 2021 강다혜, All Rights Reserved.
+                            </address>
                     </div>
                 </div>
             </div>
-        </footer>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/ui.js"></script>
-        <script src="js/slidebanner.js" type="text/javascript"></script>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/slidebanner.js" type="text/javascript"></script>
 </body>
 
 </html>

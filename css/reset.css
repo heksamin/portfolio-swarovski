@@ -28,4 +28,4 @@ a:focus, a:hover{text-decoration: underline;color: #919191;}
 body{font-family: 'Noto Sans KR', "Dotum", "돋움", "Helvetica", "AppleGothic", "Apple SD Gothic Neo", sans-serif; font-size: 11px; color: #292929;}
 .blind {overflow: hidden!important;position: absolute!important;clip: rect(0 0 0 0)!important;width: 1px!important;height: 1px!important;margin: -1px!important;}
 .clearfix::after {content: "";display: block;clear: both;}
-#container {width: 1440px; margin: 0 auto;}
+
